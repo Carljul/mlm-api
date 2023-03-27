@@ -13,7 +13,14 @@ return new class extends Migration
     {
         Schema::create('variations', function (Blueprint $table) {
             $table->id();
-            $table->tinyInteger('size');
+            $table->tinyInteger('size')->nullable();
+            $table->decimal('custom_size')->nullable();
+            $table->string('weight_type')->nullable();
+            $table->decimal('weight')->nullable();
+            $table->string('height_type')->nullable();
+            $table->decimal('height')->nullable();
+            $table->string('color')->nullable();
+            $table->string('color_name')->nullable();
             $table->timestamps();
         });
     }
