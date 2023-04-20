@@ -48,9 +48,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    /**
-     * Relationships
-     */
+    /**===========================================
+     * RELATIONSHIP
+     ===========================================*/
     public function person()
     {
         return $this->hasOne(\App\Models\Person::class, 'id', 'person_id');
