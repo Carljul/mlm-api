@@ -19,5 +19,9 @@ return [
         3 => 'Divorce',
         4 => 'Separated',
         5 => 'Widowed'
-    ]
+    ],
+
+
+    // category data for seeder
+
 ];

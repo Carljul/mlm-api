@@ -51,8 +51,20 @@ class User extends Authenticatable
     /**===========================================
      * RELATIONSHIP
      ===========================================*/
+
+    /**
+     * Person one to one relation
+     */
     public function person()
     {
         return $this->hasOne(\App\Models\Person::class, 'id', 'person_id');
+    }
+
+    /**
+     * Store one to one relation
+     */
+    public function store()
+    {
+        return $this->hasOne(\App\Models\Store::class, 'id', 'user_id');
     }
 }

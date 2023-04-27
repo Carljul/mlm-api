@@ -13,5 +13,6 @@ class Category extends Model
         'name',
         'details',
         'user_id',
+        'img_path'
     ];
 }
